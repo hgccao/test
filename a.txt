@@ -2,8 +2,4 @@ aaaaaaaaa
 aaaaaaaaa
 bbbbbbbbb
 caoqiming lll
-<<<<<<< HEAD
 123 456
-=======
-123 456
->>>>>>> dev
