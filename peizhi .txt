@@ -1,0 +1,48 @@
+################.vimrc
+set nocompatible              " be iMproved, required
+syntax on
+filetype off                  " required
+set number
+set backspace=2
+set ts=4
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'fatih/vim-go'
+
+Plugin 'majutsushi/tagbar'
+nmap <F9> :TagbarToggle<CR>
+
+Plugin 'scrooloose/nerdtree'
+nmap <F2> :NERDTreeToggle<CR>
+
+Plugin 'neoclide/coc.nvim',{'branch':'release'}
+
+Plugin 'dgryski/vim-godef'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
+
+#########.bashrc
+export GOPATH=/home/caoqiming/go
+export GOROOT=/usr/local/go
+export GOBIN=$GOPATH/bin
+export GOPROXY=https://goproxy.io,direct
+export GOPRIVATE=*.qianxin-inc.cn
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:/usr/local/go/bin
+export NODE_HOME=/home/caoqiming/node-v14.17.5-linux-x64/
+export PATH=$NODE_HOME/bin:$PATH
+export GO111MODULE=on
+export PATH="$PATH:$(go env GOPATH)/bin"
+
+
